@@ -1,0 +1,12 @@
+Sub CleanData()
+
+Sheets("Raw_Data").Select
+
+Selection.RemoveDuplicates Columns:=Array(1), Header:=xlYes
+
+
+Sheets("Dashboard").Activate
+
+MsgBox "Automation Completed"
+
+End Sub
